@@ -52,8 +52,12 @@ const images = [
 "https://drive.google.com/uc?export=view&id=1eXaE5bgkPFEOfc76AzBJ6jUAnvFPXeEA"
 ];
 
-// pick random image
-const randomImage = images[Math.floor(Math.random() * images.length)];
+const images = [
+  // paste your formatted links here
+];
 
-// display it
-document.getElementById("randomImage").src = randomImage;
+const img = document.getElementById("randomImage");
+
+// pick random image
+const randomIndex = Math.floor(Math.random() * images.length);
+img.src = images[randomIndex];
